@@ -60,6 +60,7 @@ public class PlayerController : MonoBehaviour
 
     private void Attack()
     {
+        // if(Input.GetKeyDown( KeyCode.Space ))
         if(Input.GetMouseButton(0))
         {
             animator.SetBool("IsAttacking", true);

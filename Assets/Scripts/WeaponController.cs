@@ -25,9 +25,10 @@ public class WeaponController : MonoBehaviour
 
     public void Damage(Transform weapondEnd)
     {
+        
         Vector3 direction = Vector3.forward;
         Ray theRay = new Ray(weapondEnd.position, weapondEnd.TransformDirection(direction * range));
-        // Debug.DrawRay(weapondEnd.position, weapondEnd.TransformDirection(direction * range));
+        Debug.DrawRay(weapondEnd.position, weapondEnd.TransformDirection(direction * range));
 
         if(Physics.Raycast(theRay, out RaycastHit hit, range))
         {
